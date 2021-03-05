@@ -8,8 +8,31 @@
 
 <body>
   <script>
-    // Your JavaScript goes here!
-    console.log("Hello, World!")
+    // First create a function that randomly returns "Rock", "Paper" or "Scissors"
+    function computerPlay() {
+      const weaponsList = ['Rock', 'Paper', 'Scissors'] //List of possible actions 
+      let computerSelection = weaponsList[Math.floor(Math.random() * weaponsList.length)]; // floor forces the number to be an integer
+      return computerSelection
+    }
+
+    function roundRPS(playerSelection, computerSelection) {
+
+      let winningMessage = `Congrats, you won! ${playerSelection} beats ${computerSelection}`;
+      let losingMessage = `You lost, ${computerSelection} beats ${playerSelection}.`;
+      let drawingMessage = `It's a draw, my friend.`
+
+
+      if// player won
+        return (alert(winningMessage));
+
+
+      elif // it's a draw
+      return (alert(drawingMessage));
+        else // player lost
+      return (alert(losingMessage));
+    }
+
+
   </script>
 </body>
 
